@@ -1,11 +1,16 @@
 											Design of program
-											
+						Theface										
 ----------------------------------------------------------------------
 --- Current User					 1/Enter
 --- New User						 2/n
 --- Select a user from existing ones			 3/s
 --- Exit						 e/Esc
 ----------------------------------------------------------------------
+
+-----> ----  Current User 
+Заходим в программу под тем именем, под которым выходили из 
+
+
 
 ----->--- New User 2
 
@@ -33,11 +38,14 @@ New User
 					Hello, name_of_user
 
 (1)  Let's start									y/Enter
-(3)  Statistics  									s
-(4)  Options										o
+(2)  Statistics  									s
+(3)  Options										o
+(4)  Select a user									s
 (5)  Exit										e/Esc
 ------------------------------------------------------------
 
+-------s(4)
+Выход в Preface
 ------>(3)
 Вывод графики стандартные t/t_all(N_circle),(N_correct/N_all(N_circle)
 Выбрать по шкале X u Y  значения N_circle, N_correct/N_all, t/t_all, complexity.
