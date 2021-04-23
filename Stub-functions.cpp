@@ -29,7 +29,7 @@ struct User_stat_data{
 string user_name;
 vector<Stat_data> stat_data;
 };
-					Selecting user
+					Preface
 ----------------------------------------------------------------------
 --- Current User					 1/Enter
 --- New User						 2/n
@@ -71,7 +71,7 @@ user_name.user_name = user_name;
 Выйти в Main_menu
 -------------------------------
 
-if(output data == 'e')
+if(output data == 3 or's')
 ----------------------------
 1.User1					
 2.User2					
@@ -80,9 +80,13 @@ if(output data == 'e')
 ---------------------------------------------------------------
 Вывести список list_users  (к ним привязаны user information)
 
-input data - число
- по нему находим User -> User information -> открываем файл с именем user_name
-закрываем предыдущий файл
+input data - >> число
+User_information current_user_information = list_users[число-1]   // Find user with adjacent information
+list_users[число-1] = list_users.front(); // Меняем местами предыдущего текущего и выбранного пользователя
+list_users.front() = current_user_information;
+
+закрываем предыдущий файл? если он открыт
+
  Выйти в Main_menu
 ---------------------------------------------------------------
 
@@ -102,7 +106,8 @@ input data - число
 
 y/Enter  or  o   or   e/Esc
 ---------------------------------------------------
-
+if(Output_data == '4')
+	Go to Preface
 
 
 
