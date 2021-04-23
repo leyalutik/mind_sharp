@@ -36,14 +36,19 @@ vector<Stat_data> stat_data;
 --- Select a user from existing ones			 3/s
 --- Exit						 e/Esc
 ----------------------------------------------------------------------
------> Current User
+Общие данные list_users (загружаем из файла list_users c user_information, user_stat_data при открытии программы,)
+функция загрузка данных из файла в list_users	
+
+функция preface()
+	Выводит меню preface
+	даёт выбрать один из 4-х пунктов и выводит в главное меню или закрывается.
+						
+if(choice == Current User)
 Заходим в программу под номером list_users[0];
+Выходим в главное меню
 
 
-
------> --- New User 2/n						
-if( output_data == 2 or'n')
-
+if(choice == New User 2/n)						
 "Please, input the name you like using latin letters and press Enter."
 -------------------------------------------------  
 input  data >>  string user_name
@@ -65,9 +70,8 @@ string User ="user_name"; // по умолчанию файл сохраненн
 
 User_stat_data user_name;
 user_name.user_name = user_name;
+Вписать в файл user_name
 
-Создать и открыть таблицу-файл с шапкой Stat_data с именем user_name
-закрываем предыдущий файл (если он существует и открыт)
 Выйти в Main_menu
 -------------------------------
 
@@ -85,7 +89,7 @@ User_information current_user_information = list_users[число-1]   // Find u
 list_users[число-1] = list_users.front(); // Меняем местами предыдущего текущего и выбранного пользователя
 list_users.front() = current_user_information;
 
-закрываем предыдущий файл? если он открыт
+Находим в файле users_stats имя user_name (выбранное)
 
  Выйти в Main_menu
 ---------------------------------------------------------------
@@ -95,7 +99,7 @@ list_users.front() = current_user_information;
 			Main_menu
 -------------------------------------------------
 >>  Input data
-
+						Hello, user_name!
 (1)  Let's start									y/Enter
 (2)  Statistics  									s
 (3)  Options										o
