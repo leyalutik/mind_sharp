@@ -1,12 +1,21 @@
 
+//Общий список пользователей
+vector<User_information> list_users = {{
+char operations = '+';
+int number_digits_first = 1;                				
+int number_digits_second = 1;                				
+int number_expressions = 5;					
+string user_name ="The future great mathematician";
+}};
+//Опции по настройке вычислений
 struct User_information{
 char operations = '+';
 int number_digits_first = 1;                				
 int number_digits_second = 1;                				
 int number_expressions = 5;					
-string User ="The future great mathematician";
-string name_of_file;
+string user_name ="The future great mathematician";
 };
+// Отдельный набор данных по одному циклу вычислений
 struct Stat_data{
 int N_circle = 0;
 int N_all_exp = 1;  //(Кол-во прим-)   
@@ -14,55 +23,51 @@ int N_correct_exp = 0; //(Кол-во прав.ответов)
 int N_correct_N_all = 1;   
 double  t_N = 0;  //Время выполнения цикла вычислений t_N   
 double t_N_N_all = 1; //Время выполнения одного примера 
-int Complexity = 3; // Сложность (Сложн.add по кол-ву цифр, произв,то умнож на 2)   
+int сomplexity = 3; // Сложность (Сложн.add = 1,  по кол-ву цифр 1 или 2 или 3, смешанный - 4, произв,то умнож сумму на 2)   
 };
+struct User_stat_data{
+string user_name;
+vector<Stat_data> stat_data;
+};
+					Selecting user
+----------------------------------------------------------------------
+--- Current User					 1/Enter
+--- New User						 2/n
+--- Select a user from existing ones			 3/s
+--- Exit						 e/Esc
+----------------------------------------------------------------------
+-----> Current User
+Заходим в программу под номером list_users[0];
 
-User_information user_name;
-open file user_name;
 
-Main_menu
--------------------------------------------------
->>  Input data
 
-(1)  Let''s start									y/Enter
-(2)  No, I want to modify some options				o
-(3)  Choose another user  								u
-(4)  Statistics											s
-(5)  Exit											e/Esc
+-----> --- New User 2/n						
+if( output_data == 2 or'n')
 
-<< Output_data										
-
-y/Enter  or  o   or   e/Esc
----------------------------------------------------
-
-if( output_data == 'u')
-
-user
------------------------
-a. Add new user           (n)       
-b. Choose existing user   (e)
-
-Output data 
-------------------------
-
-if(output data == 'n')
 "Please, input the name you like using latin letters and press Enter."
 -------------------------------------------------  
-input  data  string User_name
+input  data >>  string user_name
+//добавить имя пользователя в список пользователей list_users
+User_information user_information_new ;
+list_users.push_back(list_users.front());  // Вносим первого пользователя из списка в конец
+user_information_new.user_name = user_name; // Вносим имя нового пользователя, который только что ввел пользователь
+list_users.front() = user_information_new; // Ставим нового пользователя на первое место
 
-
-Создать новый struct User_information{
-char operations = '+';
+/*Создать новый struct User_information{  по умолчанию такие данные по вычислениям
+char operations = '+'; 
 int number_digits_first = 1;                				
 int number_digits_second = 1;                				
 int number_expressions = 5;					
-string User ="User_name";
-file "User_name.txt";
-}
+string User ="user_name"; // по умолчанию файл сохраненный с таким же именем
 
-Создать таблицу с шапкой User_information
-открыть новый файл с именем user_name
-закрываем предыдцщий файл
+}
+*/
+
+User_stat_data user_name;
+user_name.user_name = user_name;
+
+Создать и открыть таблицу-файл с шапкой Stat_data с именем user_name
+закрываем предыдущий файл (если он существует и открыт)
 Выйти в Main_menu
 -------------------------------
 
@@ -73,13 +78,32 @@ if(output data == 'e')
 .............. 
 ----------------------------
 ---------------------------------------------------------------
-Вывести список users  (число - name_user) (к ним привязаны user information)
+Вывести список list_users  (к ним привязаны user information)
 
 input data - число
  по нему находим User -> User information -> открываем файл с именем user_name
-закрываем предыдцщий файл
+закрываем предыдущий файл
  Выйти в Main_menu
 ---------------------------------------------------------------
+
+
+
+			Main_menu
+-------------------------------------------------
+>>  Input data
+
+(1)  Let's start									y/Enter
+(2)  Statistics  									s
+(3)  Options										o
+(4)  Select a user									s
+(5)  Exit										e/Esc
+
+<< Output_data										
+
+y/Enter  or  o   or   e/Esc
+---------------------------------------------------
+
+
 
 
 if(Output_data == 'o')
@@ -113,7 +137,7 @@ Start program
 -----------------------------------------------------	
 Входные данные 
 ------------------------------------------------------
-
+User_information user_name;
 
 int N_all from User_information
 
