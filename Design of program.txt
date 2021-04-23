@@ -1,11 +1,38 @@
 											Design of program
+											
+----------------------------------------------------------------------
+--- Current User					 1/Enter
+--- New User						 2/n
+--- Select a user from existing ones			 3/s
+--- Exit						 e/Esc
+----------------------------------------------------------------------
+
+----->--- New User 2
+
+-----------------------
+New User
+-----------------------
+<< "Please, input the name you like and press Enter." 
+>> name_user >> "Enter"
+
+
+----> --- Select a user from existing ones			 3/s
+----------------------------
+1.User1						1
+2.User2						2
+......  
+---------------------------
+<< "Please, input the number near your name and  press Enter."
+>>  число >> Enter
+
+
+
 
 					Main menu
 ------------------------------------------------------------
 					Hello, name_of_user
 
 (1)  Let's start									y/Enter
-(2)  Choose another user								u
 (3)  Statistics  									s
 (4)  Options										o
 (5)  Exit										e/Esc
@@ -15,29 +42,6 @@
 Вывод графики стандартные t/t_all(N_circle),(N_correct/N_all(N_circle)
 Выбрать по шкале X u Y  значения N_circle, N_correct/N_all, t/t_all, complexity.
 
-
------>(2)
-
------------------------
-a. Add new user           (n)       
-b. Choose existing user   (e)
-------------------------
-
-
--->a.
-
--------------------------------------------------  
-Please, input the name you like and press Enter. 
--------------------------------------------------
-
--->b.
-
-----------------------------
-1.User1						1
-2.User2						2
-......  
----------------------------
---->1
 
 
 --->(2)
