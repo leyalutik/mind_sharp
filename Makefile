@@ -1,16 +1,24 @@
-all: main
+CXX = g++
+CXXFLAGS = -ggdb -Wall -static -static-libgcc -static-libstdc++ -pthread -std=c++20
+CXXFLAGSCONIO = -ggdb -Wall -pthread -lstdc++ -std=c++17
+SOURCE=main.cpp
+GOAL=mind_sharp
+##GOAL=$(SOURCE:.cpp=$*)
+MODULES = main_menu_start.cpp timer.cpp
+OBJMODULES = $(MODULES:.cpp=.o)
 
-CXX = clang++
-override CXXFLAGS += -g -Wno-everything
+all: run 
 
-SRCS = $(shell find . -name '.ccls-cache' -type d -prune -o -type f -name '*.cpp' -print | sed -e 's/ /\\ /g')
-HEADERS = $(shell find . -name '.ccls-cache' -type d -prune -o -type f -name '*.h' -print)
+run : $(GOAL)
+	./$(GOAL)
 
-main: $(SRCS) $(HEADERS)
-	$(CXX) $(CXXFLAGS) $(SRCS) -o "$@"
+.o:.cpp .h
+	$(CXX) $(CXXFLAGS) -c $< $@ 
 
-main-debug: $(SRCS) $(HEADERS)
-	$(CXX) $(CXXFLAGS) -O0 $(SRCS) -o "$@"
 
-clean:
-	rm -f main main-debug
+$(GOAL) : $(SOURCE) $(OBJMODULES)
+	$(CXX) $(CXXFLAGS) $^ -o $@
+
+clean : 
+	rm -f *.o
+
