@@ -130,22 +130,28 @@ New User
 
 				Options
 -----------------------------------------------
-1. Operations: sum(+) or product(*) or mixed(m)				+/*/m
-2. Number of first summand digits  					1/2/3/m(mixed)
-3. Number of second summand digits  					1/2/3/m(mixed)
-4. Number of expressions							1-100
+
+		{ Wrapping up}
+"Input the symbol of  the computing operation: sum(+)/ product(*)/ all(a):"
+">>"
+Input: 
+(eg +, eg sum. eg all, eg *)  by default - +
+
+"Input the number of digits in first operator: 1/2/3/a(all)"
+">>"
+Input:
+(by default - 1)
+
+"Input the number of digits in first operator: 1/2/3/(all)"
+">>"
+Input:
+(by default - 1)
+
+"Input the number of tasks (by default 10) :  "
+">>"
+Input:
 
 -----------------------------------------------
-
-
-
-To choose definite options input: 
-e.g.  1+2m31450
-e.g.  2m
-e.g.  410
-
-
------>(1)
 
 
 				Start Program
