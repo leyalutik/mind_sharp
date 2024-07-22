@@ -3,5 +3,4 @@
 git add .
 git commit 
 
-git push -u origin_mind_sharp 
-
+git push -u origin_mind_sharp main
