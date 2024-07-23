@@ -95,7 +95,7 @@ New User
 >> name_user >> "Enter"
 
 
-----> --- Select a user from existing ones			 3/s
+----> --- Select a user from list			 3/s
 ----------------------------
 1.User1						1
 2.User2						2
