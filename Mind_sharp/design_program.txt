@@ -1,0 +1,198 @@
+
+
+Создать отдельный class Menu
+
+{
+private:
+//variables
+std::string source_file; - инф. о структуре меню и элементы вектора options;
+std::string display;
+std::vector<Menu> options;
+
+menu_option
+piblic:
+//methods
+Menu_main()
+считываем из Menu_main.txt строчку std::string display;
+и вектор options;
+} 
+void launch();
+void display_menu();
+void read_option(int32_t& number);
+void launch_option(const int number)
+{
+	options[number].launch;
+}
+
+class Menu
+{
+ Menu:option(std::string source_name)
+{
+file open source_name
+считываем из Menu_option.txt строчку std::string display;
+и вектор options;
+}
+}
+class User
+
+double best_time;
+std::vector<int32_t> task_plan;
+std::string current_source_file;
+std::string source_file;
+User()  также название юзера
+считываем информацию с current_source_file
+read (user = name)
+source_file = name+".txt";
+read_user_information();
+
+}
+
+void read_user_information() считываем 
+введите название 
+void change_plan()
+{
+	Введите план выполнения примеров, где
+	1 - сложение однозначных чисел
+	2- сложение однозначного и двухзначного чисел (меняются местами)
+	3 - умножение однозначных чисел
+	4 - умножение двухзначных чисел
+	5 - вычитание однозначных чисел
+	6 - вычитание двухзначных чисел
+	7 - деление нацело однозначных чисел
+	8 - деление нацело двухзначного и однозначного числа 
+}
+
+void change_user()
+{
+введите название юзера
+
+}
+	 
+
+
+
+
+Design of program
+						Theface										
+----------------------------------------------------------------------
+--- Current User					 1/Enter
+--- New User						 2/n
+--- Select a user from existing ones			 3/s
+--- Exit						 e/Esc
+----------------------------------------------------------------------
+
+-----> ----  Current User 
+Заходим в программу под тем именем, под которым выходили из 
+
+
+
+----->--- New User 2
+
+-----------------------
+New User
+-----------------------
+<< "Please, input the name you like and press Enter." 
+>> name_user >> "Enter"
+
+
+----> --- Select a user from existing ones			 3/s
+----------------------------
+1.User1						1
+2.User2						2
+......  
+---------------------------
+<< "Please, input the number near your name and  press Enter."
+>>  число >> Enter
+
+
+
+
+					Main menu
+------------------------------------------------------------
+					Hello, name_of_user
+
+(1)  Let's start									y/Enter
+(2)  Statistics  									s
+(3)  Options										o
+(4)  Select a user									s
+(5)  Exit										e/Esc
+------------------------------------------------------------
+
+-------s(4)
+Выход в Preface
+------>(3)
+Вывод графики стандартные t/t_all(N_circle),(N_correct/N_all(N_circle)
+Выбрать по шкале X u Y  значения N_circle, N_correct/N_all, t/t_all, complexity.
+
+
+
+--->(2)
+
+				Options
+-----------------------------------------------
+1. Operations: sum(+) or product(*) or mixed(m)				+/*/m
+2. Number of first summand digits  					1/2/3/m(mixed)
+3. Number of second summand digits  					1/2/3/m(mixed)
+4. Number of expressions							1-100
+
+-----------------------------------------------
+
+
+
+To choose definite options input: 
+e.g.  1+2m31450
+e.g.  2m
+e.g.  410
+
+
+----->(1)
+
+
+				Start Program
+----------------------------------------------------
+----------------------------------------------------
+Generate def number of def expressions
+User computes them
+The program check correct answers and print the result
+Also output the velocity of computing one expressions and show graphics N_all/N_corr(k-th cicle), V_example(k-th cicle);
+Также можно дополнить сохранять результаты при выходе из программы в файл и строить графики по всем данным? причем зависимости можно выбрать.
+К определенному пользователю определенный набор данных
+						Таблица пользователя
+User
+№ цикла   N_all(Кол-во прим.)   N-correct(Кол-во прав.ответов)  N_correct/N_all    Время выполнения вычислений t_N   t_N/N_all   Сложность (Сложн.add по кол-ву цифр, произв,то умнож на 2)   
+
+Входные данные 
+------------------------------------------------------
+char operations (по умолчанию ='+');                       //  + * m
+int number_digits_first(=1);               // 0-3  			Number of first summand digits  				
+int number_digits_second(=2);              // 0-3  			Number of second summand digits  				
+int number_expressions(=5);					//		1-100
+string User(="User");						// Пользователь 	
+-----------------------------------------------------
+
+main block
+-----------------------------------------------------
+-Генерация примеров.
+1+2=
+3+4=
+5+6=
+-Пользователь вычисляет.
+3
+4
+11
+-Программа проверяет...Выводит сколько правильных.
+"Молодец, всего одна ошибка"
+3+4=7 Ваш ответ - 4
+-Выводит время выполнения.
+"Общее время выполнения вычислений - 6 секунд.
+"Среднее вычисление одного примера - 2 секунды."
+"Так держать!"
+------------------------------------------------------
+
+
+
+Выходные данные
+-------------------------------------------------
+В файл записывается таблица Пользователя
+№ цикла   N_all(Кол-во прим-)   N-correct(Кол-во прав.ответов)  N_correct/N_all    Время выполнения вычислений t_N   t_N/N_all   Сложность (Сложн.add по кол-ву цифр, произв,то умнож на 2)   
+-------------------------------------------------
