@@ -2,7 +2,7 @@
 #include<stdio.h>
 #include<conio.h>
 #include "main_menu_start.h"
-//вывод в консоль отображение меню Preface
+//ГўГ»ГўГ®Г¤ Гў ГЄГ®Г­Г±Г®Г«Гј Г®ГІГ®ГЎГ°Г Г¦ГҐГ­ГЁГҐ Г¬ГҐГ­Гѕ Preface
 
 enum MAIN_MENU_OPTIONS
 {
@@ -15,7 +15,7 @@ enum MAIN_MENU_OPTIONS
 
 
 void display_Preface();
-void desplay_Preface_OPTIONS();
+void display_Preface_OPTIONS();
 void display_Main_menu();
 void handler_Main_menu_options( const char& option);
 void caller_Main_menu_1_START();
