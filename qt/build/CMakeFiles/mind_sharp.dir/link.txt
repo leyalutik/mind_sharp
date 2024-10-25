@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/mind_sharp.dir/mind_sharp_autogen/mocs_compilation.cpp.o CMakeFiles/mind_sharp.dir/main.cpp.o CMakeFiles/mind_sharp.dir/mainwindow.cpp.o -o mind_sharp  /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.15.3 /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.15.3 /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.3 

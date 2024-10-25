@@ -1,0 +1,8 @@
+/home/leyalutik/qt/hello/build/CMakeFiles/hello.dir
+/home/leyalutik/qt/hello/build/CMakeFiles/edit_cache.dir
+/home/leyalutik/qt/hello/build/CMakeFiles/rebuild_cache.dir
+/home/leyalutik/qt/hello/build/CMakeFiles/list_install_components.dir
+/home/leyalutik/qt/hello/build/CMakeFiles/install.dir
+/home/leyalutik/qt/hello/build/CMakeFiles/install/local.dir
+/home/leyalutik/qt/hello/build/CMakeFiles/install/strip.dir
+/home/leyalutik/qt/hello/build/CMakeFiles/hello_autogen.dir

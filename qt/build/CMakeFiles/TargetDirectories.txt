@@ -1,0 +1,8 @@
+/home/leyalutik/Desktop/git/mind_sharp/qt/build/CMakeFiles/mind_sharp.dir
+/home/leyalutik/Desktop/git/mind_sharp/qt/build/CMakeFiles/edit_cache.dir
+/home/leyalutik/Desktop/git/mind_sharp/qt/build/CMakeFiles/rebuild_cache.dir
+/home/leyalutik/Desktop/git/mind_sharp/qt/build/CMakeFiles/list_install_components.dir
+/home/leyalutik/Desktop/git/mind_sharp/qt/build/CMakeFiles/install.dir
+/home/leyalutik/Desktop/git/mind_sharp/qt/build/CMakeFiles/install/local.dir
+/home/leyalutik/Desktop/git/mind_sharp/qt/build/CMakeFiles/install/strip.dir
+/home/leyalutik/Desktop/git/mind_sharp/qt/build/CMakeFiles/mind_sharp_autogen.dir
