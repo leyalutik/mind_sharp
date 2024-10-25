@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MenuStartPlay</class>
+ <widget class="QWidget" name="MenuStartPlay">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>300</width>
+    <height>311</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>300</width>
+    <height>300</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>800</width>
+    <height>800</height>
+   </size>
+  </property>
+  <property name="mouseTracking">
+   <bool>false</bool>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="accessibleName">
+   <string>MainMenu</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+   QWidget
+{
+    background-image: url(:/images/rectangle.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    /*border: 2px solid white;  граница */
+    background-attachment: fixed; /* Зафиксировать фоновое изображение */
+border: none;
+background-color: transparent; /* Делает фон окна прозрачным */
+  
+    
+}
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>10</y>
+     <width>300</width>
+     <height>311</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget
+{
+	background-image: url(:/images/rectangle.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    /*border: 2px solid white;  граница */
+    background-attachment: fixed; /* Зафиксировать фоновое изображение */
+	border: none;
+	background-color: transparent; /* Делает фон окна прозрачным */
+}</string>
+   </property>
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>40</y>
+      <width>221</width>
+      <height>221</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <property name="sizeConstraint">
+      <enum>QLayout::SetDefaultConstraint</enum>
+     </property>
+     <item>
+      <widget class="QLabel" name="info">
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>70</height>
+        </size>
+       </property>
+       <property name="accessibleName">
+        <string>info</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel
+{
+    background-image: url(:/images/button.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    color: black;
+    font-size: 16px;
+}</string>
+       </property>
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="input">
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="accessibleName">
+        <string>input</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLineEdit
+ {
+    background-image: url(:/images/button.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    color: black;
+    font-size: 16px;
+}</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="run">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="accessibleName">
+        <string>back</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background-image: url(:/images/button.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    color: black;
+    font-size: 16px;
+}</string>
+       </property>
+       <property name="text">
+        <string>Run</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QPushButton" name="back">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>270</y>
+      <width>121</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>16777215</width>
+      <height>40</height>
+     </size>
+    </property>
+    <property name="accessibleName">
+     <string>back</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-image: url(:/images/rectangle.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    color: black;
+    font-size: 13px;
+}</string>
+    </property>
+    <property name="text">
+     <string>Return</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>300</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="title">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>0</y>
+     <width>101</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+     QLabel {
+    background-image: url(:/images/title.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    color: black;
+    font-size: 16px;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Mind Sharp</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

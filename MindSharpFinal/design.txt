@@ -1,0 +1,172 @@
+#ifndef PLAYGAME_H
+#define PLAYGAME_H
+
+#include <string>
+#include <vector>
+#include <fstream>
+#include <sstream>
+#include <iostream>
+#include <cstdint>
+
+enum class OPERATION_SIGN {
+    PLUS = 0,
+    MINUS = 1,
+    PRODUCT = 2,
+    POWER = 3
+};
+
+struct Expression {
+    int32_t member1 = 0;
+    int32_t member2 = 0;
+    int32_t answer = 0;
+    int32_t user_answer = 0;
+    OPERATION_SIGN sign = OPERATION_SIGN::PLUS;
+
+    void generate_expression();
+    bool check_data();  // MIN value <=(m1 operation m2) <= MAX_VAlue
+    void to_zero();
+};
+
+struct UserData {
+    std::string name = "leya";
+    int total_examples = 10;
+    OPERATION_SIGN operation_sign = OPERATION_SIGN::PLUS;
+    int first_member_number_digits = 2;
+    int second_member_number_digits = 2;
+    int wrong_answers = 10;
+    double best_time = 10.0;
+
+    void set(const UserData& data) {
+        name = data.name;
+        total_examples = data.total_examples;
+        operation_sign = data.operation_sign;
+        first_member_number_digits = data.first_member_number_digits;
+        second_member_number_digits = data.second_member_number_digits;
+        wrong_answers = data.wrong_answers;
+        best_time = data.best_time;
+    }
+};
+
+class FileManager {
+public:
+    static FileManager& get_instance() {
+        static FileManager instance;
+        return instance;
+    }
+
+    void set_read_file(const std::string& read_file) { read_data_file = read_file; }
+    void set_save_file(const std::string& save_file) { save_data_file = save_file; }
+
+    void read_user_data(std::vector<UserData>& user_data) {
+        std::ifstream ifs(read_data_file);
+        if (!ifs.is_open()) {
+            std::cerr << "File does not exist.\n";
+            return;
+        }
+        
+        std::string line;
+        while (std::getline(ifs, line)) {
+            UserData data;
+            std::stringstream ss(line);
+            int operation;
+            if (ss >> data.name >> data.total_examples >> operation
+                >> data.first_member_number_digits >> data.second_member_number_digits
+                >> data.wrong_answers >> data.best_time) {
+                
+                data.operation_sign = static_cast<OPERATION_SIGN>(operation);
+                user_data.push_back(data);
+            }
+        }
+    }
+
+    void save_user_data(const std::vector<UserData>& user_data) {
+        std::ofstream ofs(save_data_file);
+        if (!ofs.is_open()) {
+            std::cerr << "Cannot open file for writing.\n";
+            return;
+        }
+        
+        for (const auto& data : user_data) {
+            ofs << data.name << " " << data.total_examples << " "
+                << static_cast<int>(data.operation_sign) << " "
+                << data.first_member_number_digits << " "
+                << data.second_member_number_digits << " "
+                << data.wrong_answers << " " << data.best_time << "\n";
+        }
+    }
+
+private:
+    std::string read_data_file = "user_data.txt";
+    std::string save_data_file = "user_data.txt";
+
+    FileManager() = default;
+    FileManager(const FileManager&) = delete;
+    FileManager& operator=(const FileManager&) = delete;
+};
+
+class Game {
+public:
+    Game(const std::string& name_value = "leya") : current_name(name_value), file(FileManager::get_instance()) {}
+
+    void play_game() {
+        read_data();
+        play();
+        analyze_results();
+        write_data();
+    }
+
+protected:
+    virtual void read_data() = 0;
+    virtual void play() = 0;
+    virtual void analyze_results() = 0;
+    virtual void write_data() = 0;
+
+    FileManager& file;
+
+    std::string current_name;
+    UserData current_data {"leya", 10, OPERATION_SIGN::PLUS, 2, 2, 10, 10.0 };
+    std::vector<UserData> user_data;
+    std::string display_text;
+};
+
+class MyGame : public Game {
+public:
+    MyGame(const std::string& name = "leya") : Game(name) {}
+
+protected:
+    void read_data() override {
+        file.read_user_data(user_data);
+        for (const auto& data : user_data) {
+            if (data.name == current_name) {
+                current_data = data;
+                break;
+            }
+        }
+    }
+
+    void play() override {
+        // Реализация логики игры
+    }
+
+    void analyze_results() override {
+        // Анализ результатов игры
+    }
+
+    void write_data() override {
+        bool user_found = false;
+        for (auto& data : user_data) {
+            if (data.name == current_name) {
+                data = current_data;
+                user_found = true;
+                break;
+            }
+        }
+        if (!user_found) {
+            user_data.push_back(current_data);
+        }
+        file.save_user_data(user_data);
+    }
+};
+
+#endif // PLAYGAME_H
+
