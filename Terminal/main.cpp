@@ -1,6 +1,6 @@
 #include<iostream>
 #include<stdio.h>
-#include<conio.h>
+//#include<conio.h>
 #include "main_menu_start.h"
 //âûâîä â êîíñîëü îòîáðàæåíèå ìåíþ Preface
 

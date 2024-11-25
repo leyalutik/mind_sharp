@@ -63,7 +63,7 @@ CMAKE_BINARY_DIR = /home/leyalutik/Desktop/git/mind_sharp/Qt/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/MindSharpFinal.dir/all
+all: CMakeFiles/MindSharp.dir/all
 all: SOURCE/Game/all
 .PHONY : all
 
@@ -72,8 +72,8 @@ preinstall: SOURCE/Game/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/MindSharpFinal.dir/clean
-clean: CMakeFiles/MindSharpFinal_autogen.dir/clean
+clean: CMakeFiles/MindSharp.dir/clean
+clean: CMakeFiles/MindSharp_autogen.dir/clean
 clean: SOURCE/Game/clean
 .PHONY : clean
 
@@ -94,57 +94,57 @@ SOURCE/Game/clean: SOURCE/Game/CMakeFiles/Game_Library_autogen.dir/clean
 .PHONY : SOURCE/Game/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/MindSharpFinal.dir
+# Target rules for target CMakeFiles/MindSharp.dir
 
 # All Build rule for target.
-CMakeFiles/MindSharpFinal.dir/all: SOURCE/Game/CMakeFiles/Game_Library.dir/all
-CMakeFiles/MindSharpFinal.dir/all: CMakeFiles/MindSharpFinal_autogen.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MindSharpFinal.dir/build.make CMakeFiles/MindSharpFinal.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MindSharpFinal.dir/build.make CMakeFiles/MindSharpFinal.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/leyalutik/Desktop/git/mind_sharp/Qt/build/CMakeFiles --progress-num=11,12,13,14,15,16,17 "Built target MindSharpFinal"
-.PHONY : CMakeFiles/MindSharpFinal.dir/all
+CMakeFiles/MindSharp.dir/all: SOURCE/Game/CMakeFiles/Game_Library.dir/all
+CMakeFiles/MindSharp.dir/all: CMakeFiles/MindSharp_autogen.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MindSharp.dir/build.make CMakeFiles/MindSharp.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MindSharp.dir/build.make CMakeFiles/MindSharp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/leyalutik/Desktop/git/mind_sharp/Qt/build/CMakeFiles --progress-num=11,12,13,14,15,16,17 "Built target MindSharp"
+.PHONY : CMakeFiles/MindSharp.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/MindSharpFinal.dir/rule: cmake_check_build_system
+CMakeFiles/MindSharp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leyalutik/Desktop/git/mind_sharp/Qt/build/CMakeFiles 18
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/MindSharpFinal.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/MindSharp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leyalutik/Desktop/git/mind_sharp/Qt/build/CMakeFiles 0
-.PHONY : CMakeFiles/MindSharpFinal.dir/rule
+.PHONY : CMakeFiles/MindSharp.dir/rule
 
 # Convenience name for target.
-MindSharpFinal: CMakeFiles/MindSharpFinal.dir/rule
-.PHONY : MindSharpFinal
+MindSharp: CMakeFiles/MindSharp.dir/rule
+.PHONY : MindSharp
 
 # clean rule for target.
-CMakeFiles/MindSharpFinal.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MindSharpFinal.dir/build.make CMakeFiles/MindSharpFinal.dir/clean
-.PHONY : CMakeFiles/MindSharpFinal.dir/clean
+CMakeFiles/MindSharp.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MindSharp.dir/build.make CMakeFiles/MindSharp.dir/clean
+.PHONY : CMakeFiles/MindSharp.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/MindSharpFinal_autogen.dir
+# Target rules for target CMakeFiles/MindSharp_autogen.dir
 
 # All Build rule for target.
-CMakeFiles/MindSharpFinal_autogen.dir/all: SOURCE/Game/CMakeFiles/Game_Library.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MindSharpFinal_autogen.dir/build.make CMakeFiles/MindSharpFinal_autogen.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MindSharpFinal_autogen.dir/build.make CMakeFiles/MindSharpFinal_autogen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/leyalutik/Desktop/git/mind_sharp/Qt/build/CMakeFiles --progress-num=18 "Built target MindSharpFinal_autogen"
-.PHONY : CMakeFiles/MindSharpFinal_autogen.dir/all
+CMakeFiles/MindSharp_autogen.dir/all: SOURCE/Game/CMakeFiles/Game_Library.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MindSharp_autogen.dir/build.make CMakeFiles/MindSharp_autogen.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MindSharp_autogen.dir/build.make CMakeFiles/MindSharp_autogen.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/leyalutik/Desktop/git/mind_sharp/Qt/build/CMakeFiles --progress-num=18 "Built target MindSharp_autogen"
+.PHONY : CMakeFiles/MindSharp_autogen.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/MindSharpFinal_autogen.dir/rule: cmake_check_build_system
+CMakeFiles/MindSharp_autogen.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leyalutik/Desktop/git/mind_sharp/Qt/build/CMakeFiles 11
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/MindSharpFinal_autogen.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/MindSharp_autogen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leyalutik/Desktop/git/mind_sharp/Qt/build/CMakeFiles 0
-.PHONY : CMakeFiles/MindSharpFinal_autogen.dir/rule
+.PHONY : CMakeFiles/MindSharp_autogen.dir/rule
 
 # Convenience name for target.
-MindSharpFinal_autogen: CMakeFiles/MindSharpFinal_autogen.dir/rule
-.PHONY : MindSharpFinal_autogen
+MindSharp_autogen: CMakeFiles/MindSharp_autogen.dir/rule
+.PHONY : MindSharp_autogen
 
 # clean rule for target.
-CMakeFiles/MindSharpFinal_autogen.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MindSharpFinal_autogen.dir/build.make CMakeFiles/MindSharpFinal_autogen.dir/clean
-.PHONY : CMakeFiles/MindSharpFinal_autogen.dir/clean
+CMakeFiles/MindSharp_autogen.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MindSharp_autogen.dir/build.make CMakeFiles/MindSharp_autogen.dir/clean
+.PHONY : CMakeFiles/MindSharp_autogen.dir/clean
 
 #=============================================================================
 # Target rules for target SOURCE/Game/CMakeFiles/Game_Library.dir

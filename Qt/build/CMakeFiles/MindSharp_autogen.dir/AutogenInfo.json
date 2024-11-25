@@ -1,5 +1,5 @@
 {
-	"BUILD_DIR" : "/home/leyalutik/Desktop/git/mind_sharp/Qt/build/MindSharpFinal_autogen",
+	"BUILD_DIR" : "/home/leyalutik/Desktop/git/mind_sharp/Qt/build/MindSharp_autogen",
 	"CMAKE_BINARY_DIR" : "/home/leyalutik/Desktop/git/mind_sharp/Qt/build",
 	"CMAKE_CURRENT_BINARY_DIR" : "/home/leyalutik/Desktop/git/mind_sharp/Qt/build",
 	"CMAKE_CURRENT_SOURCE_DIR" : "/home/leyalutik/Desktop/git/mind_sharp/Qt",
@@ -88,8 +88,8 @@
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
-	"INCLUDE_DIR" : "/home/leyalutik/Desktop/git/mind_sharp/Qt/build/MindSharpFinal_autogen/include",
-	"MOC_COMPILATION_FILE" : "/home/leyalutik/Desktop/git/mind_sharp/Qt/build/MindSharpFinal_autogen/mocs_compilation.cpp",
+	"INCLUDE_DIR" : "/home/leyalutik/Desktop/git/mind_sharp/Qt/build/MindSharp_autogen/include",
+	"MOC_COMPILATION_FILE" : "/home/leyalutik/Desktop/git/mind_sharp/Qt/build/MindSharp_autogen/mocs_compilation.cpp",
 	"MOC_DEFINITIONS" : 
 	[
 		"QT_CORE_LIB",
@@ -131,17 +131,17 @@
 		"-c",
 		"/usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp"
 	],
-	"MOC_PREDEFS_FILE" : "/home/leyalutik/Desktop/git/mind_sharp/Qt/build/MindSharpFinal_autogen/moc_predefs.h",
+	"MOC_PREDEFS_FILE" : "/home/leyalutik/Desktop/git/mind_sharp/Qt/build/MindSharp_autogen/moc_predefs.h",
 	"MOC_RELAXED_MODE" : false,
 	"MOC_SKIP" : [],
 	"MULTI_CONFIG" : false,
 	"PARALLEL" : 6,
-	"PARSE_CACHE_FILE" : "/home/leyalutik/Desktop/git/mind_sharp/Qt/build/CMakeFiles/MindSharpFinal_autogen.dir/ParseCache.txt",
+	"PARSE_CACHE_FILE" : "/home/leyalutik/Desktop/git/mind_sharp/Qt/build/CMakeFiles/MindSharp_autogen.dir/ParseCache.txt",
 	"QT_MOC_EXECUTABLE" : "/usr/lib/qt5/bin/moc",
 	"QT_UIC_EXECUTABLE" : "/usr/lib/qt5/bin/uic",
 	"QT_VERSION_MAJOR" : 5,
 	"QT_VERSION_MINOR" : 15,
-	"SETTINGS_FILE" : "/home/leyalutik/Desktop/git/mind_sharp/Qt/build/CMakeFiles/MindSharpFinal_autogen.dir/AutogenUsed.txt",
+	"SETTINGS_FILE" : "/home/leyalutik/Desktop/git/mind_sharp/Qt/build/CMakeFiles/MindSharp_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
 		[ "/home/leyalutik/Desktop/git/mind_sharp/Qt/main.cpp", "MU", null ],

@@ -162,30 +162,30 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named MindSharpFinal
+# Target rules for targets named MindSharp
 
 # Build rule for target.
-MindSharpFinal: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MindSharpFinal
-.PHONY : MindSharpFinal
+MindSharp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MindSharp
+.PHONY : MindSharp
 
 # fast build rule for target.
-MindSharpFinal/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MindSharpFinal.dir/build.make CMakeFiles/MindSharpFinal.dir/build
-.PHONY : MindSharpFinal/fast
+MindSharp/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MindSharp.dir/build.make CMakeFiles/MindSharp.dir/build
+.PHONY : MindSharp/fast
 
 #=============================================================================
-# Target rules for targets named MindSharpFinal_autogen
+# Target rules for targets named MindSharp_autogen
 
 # Build rule for target.
-MindSharpFinal_autogen: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MindSharpFinal_autogen
-.PHONY : MindSharpFinal_autogen
+MindSharp_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MindSharp_autogen
+.PHONY : MindSharp_autogen
 
 # fast build rule for target.
-MindSharpFinal_autogen/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MindSharpFinal_autogen.dir/build.make CMakeFiles/MindSharpFinal_autogen.dir/build
-.PHONY : MindSharpFinal_autogen/fast
+MindSharp_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MindSharp_autogen.dir/build.make CMakeFiles/MindSharp_autogen.dir/build
+.PHONY : MindSharp_autogen/fast
 
 #=============================================================================
 # Target rules for targets named Game_Library
@@ -213,60 +213,60 @@ Game_Library_autogen/fast:
 	$(MAKE) $(MAKESILENT) -f SOURCE/Game/CMakeFiles/Game_Library_autogen.dir/build.make SOURCE/Game/CMakeFiles/Game_Library_autogen.dir/build
 .PHONY : Game_Library_autogen/fast
 
-MindSharpFinal_autogen/EWIEGA46WW/qrc_resourses.o: MindSharpFinal_autogen/EWIEGA46WW/qrc_resourses.cpp.o
-.PHONY : MindSharpFinal_autogen/EWIEGA46WW/qrc_resourses.o
+MindSharp_autogen/EWIEGA46WW/qrc_resourses.o: MindSharp_autogen/EWIEGA46WW/qrc_resourses.cpp.o
+.PHONY : MindSharp_autogen/EWIEGA46WW/qrc_resourses.o
 
 # target to build an object file
-MindSharpFinal_autogen/EWIEGA46WW/qrc_resourses.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MindSharpFinal.dir/build.make CMakeFiles/MindSharpFinal.dir/MindSharpFinal_autogen/EWIEGA46WW/qrc_resourses.cpp.o
-.PHONY : MindSharpFinal_autogen/EWIEGA46WW/qrc_resourses.cpp.o
+MindSharp_autogen/EWIEGA46WW/qrc_resourses.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MindSharp.dir/build.make CMakeFiles/MindSharp.dir/MindSharp_autogen/EWIEGA46WW/qrc_resourses.cpp.o
+.PHONY : MindSharp_autogen/EWIEGA46WW/qrc_resourses.cpp.o
 
-MindSharpFinal_autogen/EWIEGA46WW/qrc_resourses.i: MindSharpFinal_autogen/EWIEGA46WW/qrc_resourses.cpp.i
-.PHONY : MindSharpFinal_autogen/EWIEGA46WW/qrc_resourses.i
+MindSharp_autogen/EWIEGA46WW/qrc_resourses.i: MindSharp_autogen/EWIEGA46WW/qrc_resourses.cpp.i
+.PHONY : MindSharp_autogen/EWIEGA46WW/qrc_resourses.i
 
 # target to preprocess a source file
-MindSharpFinal_autogen/EWIEGA46WW/qrc_resourses.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MindSharpFinal.dir/build.make CMakeFiles/MindSharpFinal.dir/MindSharpFinal_autogen/EWIEGA46WW/qrc_resourses.cpp.i
-.PHONY : MindSharpFinal_autogen/EWIEGA46WW/qrc_resourses.cpp.i
+MindSharp_autogen/EWIEGA46WW/qrc_resourses.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MindSharp.dir/build.make CMakeFiles/MindSharp.dir/MindSharp_autogen/EWIEGA46WW/qrc_resourses.cpp.i
+.PHONY : MindSharp_autogen/EWIEGA46WW/qrc_resourses.cpp.i
 
-MindSharpFinal_autogen/EWIEGA46WW/qrc_resourses.s: MindSharpFinal_autogen/EWIEGA46WW/qrc_resourses.cpp.s
-.PHONY : MindSharpFinal_autogen/EWIEGA46WW/qrc_resourses.s
+MindSharp_autogen/EWIEGA46WW/qrc_resourses.s: MindSharp_autogen/EWIEGA46WW/qrc_resourses.cpp.s
+.PHONY : MindSharp_autogen/EWIEGA46WW/qrc_resourses.s
 
 # target to generate assembly for a file
-MindSharpFinal_autogen/EWIEGA46WW/qrc_resourses.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MindSharpFinal.dir/build.make CMakeFiles/MindSharpFinal.dir/MindSharpFinal_autogen/EWIEGA46WW/qrc_resourses.cpp.s
-.PHONY : MindSharpFinal_autogen/EWIEGA46WW/qrc_resourses.cpp.s
+MindSharp_autogen/EWIEGA46WW/qrc_resourses.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MindSharp.dir/build.make CMakeFiles/MindSharp.dir/MindSharp_autogen/EWIEGA46WW/qrc_resourses.cpp.s
+.PHONY : MindSharp_autogen/EWIEGA46WW/qrc_resourses.cpp.s
 
-MindSharpFinal_autogen/mocs_compilation.o: MindSharpFinal_autogen/mocs_compilation.cpp.o
-.PHONY : MindSharpFinal_autogen/mocs_compilation.o
+MindSharp_autogen/mocs_compilation.o: MindSharp_autogen/mocs_compilation.cpp.o
+.PHONY : MindSharp_autogen/mocs_compilation.o
 
 # target to build an object file
-MindSharpFinal_autogen/mocs_compilation.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MindSharpFinal.dir/build.make CMakeFiles/MindSharpFinal.dir/MindSharpFinal_autogen/mocs_compilation.cpp.o
-.PHONY : MindSharpFinal_autogen/mocs_compilation.cpp.o
+MindSharp_autogen/mocs_compilation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MindSharp.dir/build.make CMakeFiles/MindSharp.dir/MindSharp_autogen/mocs_compilation.cpp.o
+.PHONY : MindSharp_autogen/mocs_compilation.cpp.o
 
-MindSharpFinal_autogen/mocs_compilation.i: MindSharpFinal_autogen/mocs_compilation.cpp.i
-.PHONY : MindSharpFinal_autogen/mocs_compilation.i
+MindSharp_autogen/mocs_compilation.i: MindSharp_autogen/mocs_compilation.cpp.i
+.PHONY : MindSharp_autogen/mocs_compilation.i
 
 # target to preprocess a source file
-MindSharpFinal_autogen/mocs_compilation.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MindSharpFinal.dir/build.make CMakeFiles/MindSharpFinal.dir/MindSharpFinal_autogen/mocs_compilation.cpp.i
-.PHONY : MindSharpFinal_autogen/mocs_compilation.cpp.i
+MindSharp_autogen/mocs_compilation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MindSharp.dir/build.make CMakeFiles/MindSharp.dir/MindSharp_autogen/mocs_compilation.cpp.i
+.PHONY : MindSharp_autogen/mocs_compilation.cpp.i
 
-MindSharpFinal_autogen/mocs_compilation.s: MindSharpFinal_autogen/mocs_compilation.cpp.s
-.PHONY : MindSharpFinal_autogen/mocs_compilation.s
+MindSharp_autogen/mocs_compilation.s: MindSharp_autogen/mocs_compilation.cpp.s
+.PHONY : MindSharp_autogen/mocs_compilation.s
 
 # target to generate assembly for a file
-MindSharpFinal_autogen/mocs_compilation.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MindSharpFinal.dir/build.make CMakeFiles/MindSharpFinal.dir/MindSharpFinal_autogen/mocs_compilation.cpp.s
-.PHONY : MindSharpFinal_autogen/mocs_compilation.cpp.s
+MindSharp_autogen/mocs_compilation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MindSharp.dir/build.make CMakeFiles/MindSharp.dir/MindSharp_autogen/mocs_compilation.cpp.s
+.PHONY : MindSharp_autogen/mocs_compilation.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MindSharpFinal.dir/build.make CMakeFiles/MindSharpFinal.dir/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MindSharp.dir/build.make CMakeFiles/MindSharp.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -274,7 +274,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MindSharpFinal.dir/build.make CMakeFiles/MindSharpFinal.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MindSharp.dir/build.make CMakeFiles/MindSharp.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -282,7 +282,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MindSharpFinal.dir/build.make CMakeFiles/MindSharpFinal.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MindSharp.dir/build.make CMakeFiles/MindSharp.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 mainmenu.o: mainmenu.cpp.o
@@ -290,7 +290,7 @@ mainmenu.o: mainmenu.cpp.o
 
 # target to build an object file
 mainmenu.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MindSharpFinal.dir/build.make CMakeFiles/MindSharpFinal.dir/mainmenu.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MindSharp.dir/build.make CMakeFiles/MindSharp.dir/mainmenu.cpp.o
 .PHONY : mainmenu.cpp.o
 
 mainmenu.i: mainmenu.cpp.i
@@ -298,7 +298,7 @@ mainmenu.i: mainmenu.cpp.i
 
 # target to preprocess a source file
 mainmenu.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MindSharpFinal.dir/build.make CMakeFiles/MindSharpFinal.dir/mainmenu.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MindSharp.dir/build.make CMakeFiles/MindSharp.dir/mainmenu.cpp.i
 .PHONY : mainmenu.cpp.i
 
 mainmenu.s: mainmenu.cpp.s
@@ -306,7 +306,7 @@ mainmenu.s: mainmenu.cpp.s
 
 # target to generate assembly for a file
 mainmenu.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MindSharpFinal.dir/build.make CMakeFiles/MindSharpFinal.dir/mainmenu.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MindSharp.dir/build.make CMakeFiles/MindSharp.dir/mainmenu.cpp.s
 .PHONY : mainmenu.cpp.s
 
 menu_start_play.o: menu_start_play.cpp.o
@@ -314,7 +314,7 @@ menu_start_play.o: menu_start_play.cpp.o
 
 # target to build an object file
 menu_start_play.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MindSharpFinal.dir/build.make CMakeFiles/MindSharpFinal.dir/menu_start_play.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MindSharp.dir/build.make CMakeFiles/MindSharp.dir/menu_start_play.cpp.o
 .PHONY : menu_start_play.cpp.o
 
 menu_start_play.i: menu_start_play.cpp.i
@@ -322,7 +322,7 @@ menu_start_play.i: menu_start_play.cpp.i
 
 # target to preprocess a source file
 menu_start_play.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MindSharpFinal.dir/build.make CMakeFiles/MindSharpFinal.dir/menu_start_play.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MindSharp.dir/build.make CMakeFiles/MindSharp.dir/menu_start_play.cpp.i
 .PHONY : menu_start_play.cpp.i
 
 menu_start_play.s: menu_start_play.cpp.s
@@ -330,7 +330,7 @@ menu_start_play.s: menu_start_play.cpp.s
 
 # target to generate assembly for a file
 menu_start_play.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MindSharpFinal.dir/build.make CMakeFiles/MindSharpFinal.dir/menu_start_play.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MindSharp.dir/build.make CMakeFiles/MindSharp.dir/menu_start_play.cpp.s
 .PHONY : menu_start_play.cpp.s
 
 # Help Target
@@ -346,15 +346,15 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... Game_Library_autogen"
-	@echo "... MindSharpFinal_autogen"
+	@echo "... MindSharp_autogen"
 	@echo "... Game_Library"
-	@echo "... MindSharpFinal"
-	@echo "... MindSharpFinal_autogen/EWIEGA46WW/qrc_resourses.o"
-	@echo "... MindSharpFinal_autogen/EWIEGA46WW/qrc_resourses.i"
-	@echo "... MindSharpFinal_autogen/EWIEGA46WW/qrc_resourses.s"
-	@echo "... MindSharpFinal_autogen/mocs_compilation.o"
-	@echo "... MindSharpFinal_autogen/mocs_compilation.i"
-	@echo "... MindSharpFinal_autogen/mocs_compilation.s"
+	@echo "... MindSharp"
+	@echo "... MindSharp_autogen/EWIEGA46WW/qrc_resourses.o"
+	@echo "... MindSharp_autogen/EWIEGA46WW/qrc_resourses.i"
+	@echo "... MindSharp_autogen/EWIEGA46WW/qrc_resourses.s"
+	@echo "... MindSharp_autogen/mocs_compilation.o"
+	@echo "... MindSharp_autogen/mocs_compilation.i"
+	@echo "... MindSharp_autogen/mocs_compilation.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
