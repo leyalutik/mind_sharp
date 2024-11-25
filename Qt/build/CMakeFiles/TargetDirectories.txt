@@ -1,0 +1,16 @@
+/home/leyalutik/Desktop/git/mind_sharp/Qt/build/CMakeFiles/MindSharpFinal.dir
+/home/leyalutik/Desktop/git/mind_sharp/Qt/build/CMakeFiles/edit_cache.dir
+/home/leyalutik/Desktop/git/mind_sharp/Qt/build/CMakeFiles/rebuild_cache.dir
+/home/leyalutik/Desktop/git/mind_sharp/Qt/build/CMakeFiles/list_install_components.dir
+/home/leyalutik/Desktop/git/mind_sharp/Qt/build/CMakeFiles/install.dir
+/home/leyalutik/Desktop/git/mind_sharp/Qt/build/CMakeFiles/install/local.dir
+/home/leyalutik/Desktop/git/mind_sharp/Qt/build/CMakeFiles/install/strip.dir
+/home/leyalutik/Desktop/git/mind_sharp/Qt/build/CMakeFiles/MindSharpFinal_autogen.dir
+/home/leyalutik/Desktop/git/mind_sharp/Qt/build/SOURCE/Game/CMakeFiles/Game_Library.dir
+/home/leyalutik/Desktop/git/mind_sharp/Qt/build/SOURCE/Game/CMakeFiles/edit_cache.dir
+/home/leyalutik/Desktop/git/mind_sharp/Qt/build/SOURCE/Game/CMakeFiles/rebuild_cache.dir
+/home/leyalutik/Desktop/git/mind_sharp/Qt/build/SOURCE/Game/CMakeFiles/list_install_components.dir
+/home/leyalutik/Desktop/git/mind_sharp/Qt/build/SOURCE/Game/CMakeFiles/install.dir
+/home/leyalutik/Desktop/git/mind_sharp/Qt/build/SOURCE/Game/CMakeFiles/install/local.dir
+/home/leyalutik/Desktop/git/mind_sharp/Qt/build/SOURCE/Game/CMakeFiles/install/strip.dir
+/home/leyalutik/Desktop/git/mind_sharp/Qt/build/SOURCE/Game/CMakeFiles/Game_Library_autogen.dir

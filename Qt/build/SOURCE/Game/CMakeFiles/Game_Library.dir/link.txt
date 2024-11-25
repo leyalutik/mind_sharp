@@ -1,0 +1,2 @@
+/usr/bin/ar qc libGame_Library.a CMakeFiles/Game_Library.dir/Game_Library_autogen/mocs_compilation.cpp.o CMakeFiles/Game_Library.dir/game.cpp.o CMakeFiles/Game_Library.dir/filemanager.cpp.o CMakeFiles/Game_Library.dir/input.cpp.o CMakeFiles/Game_Library.dir/output.cpp.o CMakeFiles/Game_Library.dir/userdata.cpp.o CMakeFiles/Game_Library.dir/expression.cpp.o CMakeFiles/Game_Library.dir/timer.cpp.o
+/usr/bin/ranlib libGame_Library.a

@@ -1,0 +1,24 @@
+{
+	"BUILD_DIR" : "/home/leyalutik/Desktop/git/mind_sharp/Qt/build/MindSharpFinal_autogen",
+	"CMAKE_BINARY_DIR" : "/home/leyalutik/Desktop/git/mind_sharp/Qt/build",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/leyalutik/Desktop/git/mind_sharp/Qt/build",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/leyalutik/Desktop/git/mind_sharp/Qt",
+	"CMAKE_SOURCE_DIR" : "/home/leyalutik/Desktop/git/mind_sharp/Qt",
+	"INCLUDE_DIR" : "/home/leyalutik/Desktop/git/mind_sharp/Qt/build/MindSharpFinal_autogen/include",
+	"INPUTS" : 
+	[
+		"/home/leyalutik/Desktop/git/mind_sharp/Qt/rectangle.png",
+		"/home/leyalutik/Desktop/git/mind_sharp/Qt/title.png",
+		"/home/leyalutik/Desktop/git/mind_sharp/Qt/button.png"
+	],
+	"LOCK_FILE" : "/home/leyalutik/Desktop/git/mind_sharp/Qt/build/CMakeFiles/MindSharpFinal_autogen.dir/AutoRcc_resourses_EWIEGA46WW_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "-name", "resourses" ],
+	"OUTPUT_CHECKSUM" : "EWIEGA46WW",
+	"OUTPUT_NAME" : "qrc_resourses.cpp",
+	"RCC_EXECUTABLE" : "/usr/lib/qt5/bin/rcc",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "/home/leyalutik/Desktop/git/mind_sharp/Qt/build/CMakeFiles/MindSharpFinal_autogen.dir/AutoRcc_resourses_EWIEGA46WW_Used.txt",
+	"SOURCE" : "/home/leyalutik/Desktop/git/mind_sharp/Qt/resourses.qrc",
+	"VERBOSITY" : 0
+}
